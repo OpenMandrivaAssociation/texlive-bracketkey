@@ -1,3 +1,9 @@
+# revision 17129
+# category Package
+# catalog-ctan /macros/latex/contrib/bracketkey
+# catalog-date 2010-02-19 21:33:30 +0100
+# catalog-license lppl1.3
+# catalog-version 1.0
 Name:		texlive-bracketkey
 Version:	1.0
 Release:	1
@@ -41,6 +47,7 @@ producing lists of species.
 %doc %{_texmfdistdir}/doc/latex/bracketkey/README
 %doc %{_texmfdistdir}/doc/latex/bracketkey/bracketkey.pdf
 %doc %{_texmfdistdir}/doc/latex/bracketkey/bracketkey.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -51,3 +58,5 @@ producing lists of species.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
