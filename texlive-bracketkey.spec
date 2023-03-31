@@ -1,6 +1,6 @@
 Name:		texlive-bracketkey
 Version:	17129
-Release:	1
+Release:	2
 Summary:	Produce bracketed identification keys
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/bracketkey
